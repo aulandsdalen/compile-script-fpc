@@ -7,6 +7,7 @@ if [ "$?" -eq "0" ]; then
 	rm $1.o
 	mv $1 executables/$1
 else
+	echo "an error occured while compiling $1.pas"
 	exit 255 
 fi
 	echo "running executables/$1"
